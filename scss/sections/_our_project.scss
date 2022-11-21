@@ -1,0 +1,63 @@
+#our_project {
+  padding: 100px 0;
+  background: linear-gradient(180.99deg, rgba(255, 255, 255, 0) 6.19%, rgba(0, 0, 0, 0.15) 102.42%);
+  .our_project {
+    .project_heading_area {
+      display: grid;
+      grid-template-columns: auto auto;
+      @media (max-width: 999px) {
+        grid-template-columns: auto;
+        text-align: center;
+      }
+      h2 {
+        font-size: 36px;
+        line-height: 46px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: #1f3f68;
+      }
+      p {
+        font-family: "Gilroy";
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #1f3f68;
+        opacity: 0.6;
+        @media (max-width: 999px) {
+          br {
+            display: none;
+          }
+        }
+        @media (max-width: 768px) {
+          margin-bottom: -50px;
+        }
+      }
+    }
+    .project_imgs_area {
+      .project_img {
+        padding-top: 96px;
+        @media (max-width: 1200px) {
+          align-items: center;
+        }
+        img {
+          @media (max-width: 999px) {
+            width: 100%;
+            padding-top: 20px;
+          }
+          @media (max-width: 768px) {
+            padding: 0;
+          }
+        }
+        .second_img {
+          padding-right: 96px;
+          @media (max-width: 1200px) {
+            padding: 0;
+          }
+          @media (max-width: 768px) {
+            padding-bottom: 20px;;
+          }
+        }
+      }
+    }
+  }
+}
